@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_main"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <com.biswa1045.fact.VerticalViewPager
+
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_above="@+id/buttom_navigation"
+    android:id="@+id/verticalViewPager"
+         />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttom_navigation"
+        android:background="@color/back_main"
+        app:itemTextColor="#4C4A49"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
